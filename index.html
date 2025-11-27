@@ -1,35 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cardápio Agápio Lanches – Porto Alegre</title>
-    <meta name="description" content="Confira o cardápio completo do Agápio Lanches em Porto Alegre e descubra nossos lanches." />
+    <meta charset="utf-8">
+    <title>Agápio Lanches</title>
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <div id="root">
-        <!-- Loading simples -->
-        <div style="text-align: center; padding: 50px; background: yellow; color: red;">
-            <h1>Agápio Lanches</h1>
-            <p>Carregando cardápio...</p>
-        </div>
-    </div>
+    <div id="root"></div>
     <script src="assets/main.js"></script>
-    
-    <!-- FORÇA a execução do React -->
-    <script>
-        setTimeout(function() {
-            console.log('Tentando iniciar React...');
-            if (window.React && window.ReactDOM) {
-                console.log('React encontrado!');
-                // Tenta encontrar e executar o app
-                var rootElement = document.getElementById('root');
-                if (rootElement) {
-                    console.log('Elemento root encontrado!');
-                }
-            }
-        }, 1000);
-    </script>
 </body>
 </html>
